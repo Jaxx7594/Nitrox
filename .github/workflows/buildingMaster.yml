@@ -29,7 +29,7 @@ on:
 
 jobs:
   setup:
-    if: github.repository_owner == 'SubnauticaNitrox'
+    if: github.repository_owner == 'Jaxx7594'
     runs-on: [self-hosted, linux]
     steps:
       - name: Checking out repository
