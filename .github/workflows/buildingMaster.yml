@@ -37,7 +37,7 @@ jobs:
 
   build:
     needs: setup
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - name: Build
         run: dotnet build Nitrox.Launcher/Nitrox.Launcher.csproj -c ${{ inputs.configuration }} -r ${{ inputs.runtime }}
@@ -45,7 +45,7 @@ jobs:
   test:
     if: ${{ inputs.run_tests }}
     needs: build
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - name: Run Tests
         continue-on-error: true
