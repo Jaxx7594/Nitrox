@@ -30,7 +30,7 @@ on:
 jobs:
   setup:
     if: github.repository_owner == 'Jaxx7594'
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - name: Checking out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
